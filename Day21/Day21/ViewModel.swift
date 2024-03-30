@@ -8,9 +8,12 @@ class ViewModel {
     var selectedPlaceInfo: PlaceInfo?
 
     var placeInfoList: [PlaceInfo] = [
-        PlaceInfo(name: "渋谷 / Shibuya", locationCoordinate: CLLocationCoordinate2DMake(35.6596165, 139.7001669)),
-        PlaceInfo(name: "秋葉原 / Akihabara", locationCoordinate: CLLocationCoordinate2DMake(35.6987049, 139.7714407)),
-        PlaceInfo(name: "歌舞伎町 / Kabuki-cho", locationCoordinate: CLLocationCoordinate2DMake(35.6937649, 139.7009477)),
+//        PlaceInfo(name: "渋谷 / Shibuya", locationCoordinate: CLLocationCoordinate2DMake(35.6596165, 139.7001669)),
+//        PlaceInfo(name: "秋葉原 / Akihabara", locationCoordinate: CLLocationCoordinate2DMake(35.6987049, 139.7714407)),
+//        PlaceInfo(name: "歌舞伎町 / Kabuki-cho", locationCoordinate: CLLocationCoordinate2DMake(35.6937649, 139.7009477)),
+        
+        //40.75610° N, 73.98657° W
+        PlaceInfo(name: "时代广场 / Time Square", locationCoordinate: CLLocationCoordinate2DMake(40.75610, -73.98657)),
     ]
 
     private var contentEntity = Entity()

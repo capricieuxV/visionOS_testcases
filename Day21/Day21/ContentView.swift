@@ -20,11 +20,11 @@ struct ContentView: View {
                 Text(placeInfo.name)
             }
             .onChange(of: viewModel.selectedPlaceInfo, { oldValue, newValue in
-                // print("\(oldValue), \(newValue)")
                 if let placeInfo = newValue {
-                    let camera = MapCamera(centerCoordinate: placeInfo.locationCoordinate, distance: 200, heading: 0, pitch: 60)
+                    let camera = MapCamera(centerCoordinate: placeInfo.locationCoordinate, distance: 0, heading: -90, pitch: 45)
                     let cameraPosition = MapCameraPosition.camera(camera)
                     self.position = cameraPosition
+                    
                     if showImmersiveSpace {
                         showImmersiveSpace = false
                     }
